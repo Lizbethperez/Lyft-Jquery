@@ -37,7 +37,6 @@ var getCode =function (){
       return codeRandom;
       }
   }
-  
   function countCode(e,codeRandom1){
     var initialCode=$('#code').val();
     console.log(initialCode,codeRandom1);

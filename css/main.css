@@ -19,7 +19,7 @@ body{
     background-color:  #c100b0;;
     margin: 0.3em;
     font-size: 25px;
-    border-radius: 7%;
+    border-radius: 3%;
     padding: 1em;
 
 }
@@ -36,6 +36,10 @@ body{
     }
     #splash{
         width:50%;
+    }
+    .format-sign-Up{
+        font-size: 25px;
+        color:#880e4f;
     }
 }
 
@@ -91,4 +95,8 @@ body{
     background-position: center;
     background-size: cover;
     text-align: center;
+}
+.format-sign-Up{
+    font-size: 35px;
+    color:#880e4f;
 }
