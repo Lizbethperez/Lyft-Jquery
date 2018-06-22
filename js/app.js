@@ -50,17 +50,6 @@ var getCode =function (){
         
       }
     }
-    /*if(initialCode.length==2){
-      $('#btn-next-modal2').removeClass('disabled'); // se le quita la clase al boton para que este se habilite
-      console.log(initialCode);
-      if(initialCode===codeRandom1){
-        location.href="index3.html"
-      }else {
-        swal( "good job", "This is your Code!", "success");
-      }*/
-    /*}else if(phone.length2){
-      $('#btn-next-modal2').attr('disabled','disabled');;
-    }*/
 
   }
   
