@@ -8,7 +8,7 @@ $(function(){
  });
  
  //Se utiliza esta funcion para que solo se permitan digitos del 0 al 9 en el input
- $('.input-number').on('input', function () { 
+$('.input-number').on('input', function () { 
   this.value = this.value.replace(/[^0-9]/g,'');
 });
 
@@ -23,16 +23,26 @@ $(function(){
       $('#phone').attr('disabled','disabled');;
     }
  }
+
   function getCode(){
-    while(true){
+    //while(true){
       var codeRandom = Math.floor((Math.random() * 1000) + 1);
       if(codeRandom>=100){
         var numberToString=codeRandom.toString();
       swal( numberToString, "This is your Code!", "success");
       return;
       }
-    }
-  
+
+    //}
+  }
+   function activeButton(){
+    $('#btn-next-modal2').removeClass('disabled');
+  }
+  function activeButton(){
+    $('#btn-next-modal2').removeClass('disabled');
+  }
+  function activeButtonName(){
+    $('#btn-next-UserData').removeClass('disabled');
   }
 
 $(document).ready(function(){
@@ -40,5 +50,7 @@ $(document).ready(function(){
     $('select').formSelect();
     $('#phone').keydown(countNumber);
     $('#btn-next').click(getCode);
+    $('#code').keydown(activeButton);
+    $('#icon_name').keydown(activeButtonName);
   });
       

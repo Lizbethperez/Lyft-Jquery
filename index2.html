@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LYFT</title>
+    <link rel="stylesheet" href="css/assets/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+            <div class="row">
+                <div class="col s12 m6 l12">
+                    <div class="card white">
+                        <div class="card-content black-text">
+                            <div class="row">
+                                <a href="index.html" class=" col s2 l2 modal-close">
+                                    <i class="material-icons medium">chevron_left</i>
+                                </a>
+                                <h4 class="col s8 l4 offset-l2 ">Sign Up</h5>
+                            </div>
+                            <p>Join Now for free ride credits</p>
+                            <br>
+                            <div class="row">
+                                <div class="input-field col s6 m6">
+                                    <select class="icons">
+                                        <option value="" disabled selected>Pais</option>
+                                        <option value="" data-icon="assets/brazil.png"></option>
+                                        <option value="" data-icon="assets/germany.png">Alemania</option>
+                                        <option value="" data-icon="assets/japan.png">Japon</option>
+                                        <option value="" data-icon="assets/usa.png">Usa</option>
+                                        <option value="" data-icon="assets/Mexico-icon.png">Mexico</option>
+                                    </select>
+                                    <label></label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="phone" type="tel" class="validate input-number">
+                                    <label for="phone">Telephone</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <p>We'll a text to verify your phone</p>
+                            <a id="btn-next" class="btn-large disabled modal-close modal-trigger" href="#modal-next">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+<!--CARD INGRESAR CODIGO GENERADO-->
+<div id="modal-next" class="modal">
+    <div class="modal-content">
+        <div class="row">
+                <div class="col s12 m6 l12">
+                    <div class="card white">
+                        <div class="card-content black-text">
+                            <div class="row">
+                                <a href="#!" class=" col s2 l2 modal-close">
+                                    <i class="material-icons medium">chevron_left</i>
+                                </a>
+                                <h4 class="col s8 l4 offset-l2 ">Verify Phone Number</h5>
+                            </div>
+                            <p>Join Now for free ride credits</p>
+                            <br>
+                            <div class="row">
+                                <div class="col s12">
+                                LAB:
+                                <div class="input-field inline">
+                                    <input id="code" type="tel" class="validate">
+                                    <label for="code"></label>
+                                </div>
+                                <p>Enter the code send to +52</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-action">
+                            <a id="btn-next-modal2" class="btn-large disabled" href="index3.html">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+        <script src="js/assets/materialize.min.js"></script>
+       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+       <script src="js/app.js"></script>
+
+
+    </body>
+    </html>
