@@ -19,7 +19,7 @@ body{
     background-color:  #c100b0;;
     margin: 0.3em;
     font-size: 25px;
-    border-radius: 10%;
+    border-radius: 7%;
     padding: 1em;
 
 }
@@ -68,14 +68,6 @@ body{
     transform: translateX(-50%) translateY(-50%);
 }
 
-
-.dropdown-content li>span {
-    font-size: 16px;
-    color: #26a69a;
-    display: block;
-    line-height: 22px;
-    padding: 14px 16px;
-}
 .dropdown-content li {
     clear: both;
     color: rgba(0,0,0,0.87);
