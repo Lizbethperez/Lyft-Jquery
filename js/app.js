@@ -12,6 +12,10 @@ $('.input-number').on('input', function () {
   this.value = this.value.replace(/[^0-9]/g,'');
 });
 
+$('.input-code').on('input', function () { 
+  this.value = this.value.replace(/[^0-9]/g,'');
+});
+
  //funcion para permiter solo 10 digitos al ingresar el telefono
  function countNumber(){
     var phone=$("#phone").val();
@@ -25,7 +29,6 @@ $('.input-number').on('input', function () {
  }
 
   function getCode(){
-    //while(true){
       var codeRandom = Math.floor((Math.random() * 1000) + 1);
       if(codeRandom>=100){
         var numberToString=codeRandom.toString();
@@ -33,14 +36,19 @@ $('.input-number').on('input', function () {
       return;
       }
 
-    //}
+   
   }
-   function activeButton(){
-    $('#btn-next-modal2').removeClass('disabled');
+  function countCode(){
+    var initialCode=$('#code').val();
+    if(initialCode.length==2){
+      $('#btn-next-modal2').removeClass('disabled'); // se le quita la clase al boton para que este se habilite
+      console.log(phone);
+    }else if(phone.length>2){
+      $('#btn-next-modal2').attr('disabled','disabled');;
+    }
+
   }
-  function activeButton(){
-    $('#btn-next-modal2').removeClass('disabled');
-  }
+  
   function activeButtonName(){
     $('#btn-next-UserData').removeClass('disabled');
   }
@@ -50,7 +58,7 @@ $(document).ready(function(){
     $('select').formSelect();
     $('#phone').keydown(countNumber);
     $('#btn-next').click(getCode);
-    $('#code').keydown(activeButton);
+    $('#code').keydown(countCode);
     $('#icon_name').keydown(activeButtonName);
   });
       
